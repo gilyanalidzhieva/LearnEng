@@ -1,0 +1,44 @@
+.word-card {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid rgb(163, 131, 131);
+    border-radius: 5px;
+    background-color: rgb(250, 216, 247);
+}
+
+.word {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.transcription {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.show-translation-btn {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(53, 54, 119);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.translation {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(37, 37, 37);
+}
