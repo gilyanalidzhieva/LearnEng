@@ -1,0 +1,194 @@
+[
+  {
+    "id": "16842",
+    "english": "chair",
+    "transcription": "[tʃɛə(r)]",
+    "russian": "стул",
+    "tags": "",
+    "tags_json": "[\"\"]"
+  },
+  {
+    "id": "16843",
+    "english": "sky",
+    "transcription": "[skaɪ]",
+    "russian": "небо",
+    "tags": "nature",
+    "tags_json": "[\"nature\"]"
+  },
+  {
+    "id": "16844",
+    "english": "mountain",
+    "transcription": "[ˈmaʊntən]",
+    "russian": "гора",
+    "tags": "nature",
+    "tags_json": "[\"nature\"]"
+  },
+  {
+    "id": "16904",
+    "english": "sunflower",
+    "transcription": "[ˈsʌnflaʊə]",
+    "russian": "подсолнух",
+    "tags": "flower",
+    "tags_json": "[\"flower\"]"
+  },
+  {
+    "id": "16905",
+    "english": "cat",
+    "transcription": "[kæt]",
+    "russian": "кошка",
+    "tags": "animal",
+    "tags_json": "[\"animal\"]"
+  },
+  {
+    "id": "16906",
+    "english": "tree",
+    "transcription": "[triː]",
+    "russian": "дерево",
+    "tags": "wood",
+    "tags_json": "[\"wood\"]"
+  },
+  {
+    "id": "16907",
+    "english": "robot",
+    "transcription": "[ˈrəʊbɒt]",
+    "russian": "робот",
+    "tags": "technic",
+    "tags_json": "[\"technic\"]"
+  },
+  {
+    "id": "16908",
+    "english": "moon",
+    "transcription": "[muːn]",
+    "russian": "луна",
+    "tags": "satellite",
+    "tags_json": "[\"satellite\"]"
+  },
+  {
+    "id": "16909",
+    "english": "grass",
+    "transcription": "[grɑːs]",
+    "russian": "трава",
+    "tags": "nature",
+    "tags_json": "[\"nature\"]"
+  },
+  {
+    "id": "16924",
+    "english": "chair",
+    "transcription": "[tʃɛə(r)]",
+    "russian": "стул",
+    "tags": "",
+    "tags_json": "[]"
+  },
+  {
+    "id": "16925",
+    "english": "cat",
+    "transcription": "[kæt]",
+    "russian": "кошка",
+    "tags": "",
+    "tags_json": "[]"
+  },
+  {
+    "id": "16926",
+    "english": "good",
+    "transcription": "[gʊd]",
+    "russian": "хорошо",
+    "tags": "general",
+    "tags_json": "[\"general\"]"
+  },
+  {
+    "id": "16929",
+    "english": "sun",
+    "transcription": "sun",
+    "russian": "sun",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16930",
+    "english": "wonderful",
+    "transcription": "",
+    "russian": "wonderful",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16931",
+    "english": "street",
+    "transcription": "",
+    "russian": "street",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16932",
+    "english": "sea",
+    "transcription": "",
+    "russian": "sea",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16933",
+    "english": "ocean",
+    "transcription": "",
+    "russian": "ocean",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16934",
+    "english": "milk",
+    "transcription": "",
+    "russian": "milk",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16936",
+    "english": "happy",
+    "transcription": "happy",
+    "russian": "happy",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16937",
+    "english": "learn ",
+    "transcription": "learn ",
+    "russian": "learn ",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16938",
+    "english": "shadow",
+    "transcription": "shadow",
+    "russian": "тень",
+    "tags": "Array",
+    "tags_json": "null"
+  },
+  {
+    "id": "16939",
+    "english": "bread",
+    "transcription": "[bred]",
+    "russian": "хлеб",
+    "tags": "food",
+    "tags_json": "[\"food\"]"
+  },
+  {
+    "id": "16946",
+    "english": "good",
+    "transcription": "[gʊd]",
+    "russian": "хорошо",
+    "tags": "general",
+    "tags_json": "[\"general\"]"
+  },
+  {
+    "id": "16947",
+    "english": "gold",
+    "transcription": "gold",
+    "russian": "золото",
+    "tags": "Array",
+    "tags_json": "[\"Array\"]"
+  }
+]

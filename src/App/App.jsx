@@ -1,9 +1,8 @@
 import "./App.scss";
-import { Home, Table, Error } from "../Pages";
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
-import {Routes, Route} from 'react-router-dom'
-import WordCard from "../Components/Card/Card";
+import WordCard from '../Components/Card/Card'
+import WordList from "../Components/Table/Table";
 
 const words = [
   {
@@ -14,17 +13,31 @@ const words = [
   },
 ];
 
+
 function App() {
   return (
     <>
-      <h1>Hello</h1>
-      <div>
+      <div className="app">
+        <header>
+          <Header />
+        </header>
+        <main>
+          <div>
       {words.map((word) => (
         <WordCard key={word.word} {...word} />
       ))}
-    </div>
+          </div>
+        </main>
+         <WordList />
+        <footer>
+          <Footer />
+        </footer>
+      
+        </div>
     </>
   );
 }
 
 export default App;
+
+

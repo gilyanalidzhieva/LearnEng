@@ -1,8 +1,8 @@
 .word-card {
     margin: 0 auto;
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 250px;
     padding: 10px;
     border: 2px solid rgb(163, 131, 131);
     border-radius: 5px;
@@ -12,6 +12,13 @@
 .word {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.topic {
+    font-size: 20px;
+    font-style: italic;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -35,10 +42,21 @@
     cursor: pointer;
     text-align: center;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-translation-btn:hover {
+    background-color: rgb(91, 93, 224) ;
+}
+
+.show-translation-btn:active {
+    transform: scale(0.95);
 }
 
 .translation {
     font-size: 25px;
     text-align: center;
     color: rgb(37, 37, 37);
+    font-weight: bold;
+    color: rgb(74, 76, 189);
 }

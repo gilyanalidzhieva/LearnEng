@@ -10,13 +10,15 @@ const WordCard = ({ word, transcription, translation, topic }) => {
 
   return (
     <div className="word-card">
-      <div className="card-side front">
+      <div className="card-header">
         <p className="word">{word}</p>
-        <p className="transcription">{transcription}</p>
+        <p className="topic">{topic}</p>
       </div>
-      <div className="card-side back">       
-        {showTranslation && <p className="translation">{translation}</p>}
-        <button className="show-translation-btn" onClick={handleShowTranslation}>Показать перевод</button>
+      <div className="card-body">
+        <p className="transcription">{transcription}</p>
+        {!showTranslation && (
+          <button className="show-translation-btn" onClick={handleShowTranslation}>Показать перевод</button>)}
+        {showTranslation && <p className="translation">{translation}</p>} 
       </div>
     </div>
   );

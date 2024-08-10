@@ -1,0 +1,99 @@
+.word-list {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+th {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.save-btn {
+    background-color: rgb(60, 196, 60);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid gray;
+}
+
+.save-btn:hover {
+    background-color: #388e3c;
+}
+
+.cancel-btn {
+    background-color: rgb(92, 92, 218);
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        border: 1px solid gray;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(43, 43, 126);
+}
+
+.edit-btn {
+    background-color: rgb(235, 175, 65);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid gray;
+}
+
+.edit-btn:hover {
+    background-color: rgb(160, 109, 16);
+}
+
+.delete-btn {
+    background-color: rgb(233, 71, 71);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid gray;
+}
+
+.delete-btn:hover {
+    background-color: rgb(170, 49, 49);
+}
+
+.add-btn {
+    background-color: rgb(53, 54, 119);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.add-btn:hover {
+    background-color: rgb(91, 93, 224);
+}
+
+.add-btn:active {
+    transform: scale(0.95);
+}
