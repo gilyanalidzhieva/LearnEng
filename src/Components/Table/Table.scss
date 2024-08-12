@@ -1,36 +1,56 @@
+@import 'src/vars.scss';
+
 .word-list {
     width: 100%;
 }
 
-table {
+.word-table {
     width: 100%;
     border-collapse: separate;
 }
 
-th,
-td {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-}
-
-th {
+.table-cell {
+    border: 1px solid $color-c;
+    height: 40px;
     text-align: center;
 }
+
+.table-cell1 {
+    border: 1px solid $color-c;
+    height: 40px;
+    text-align: center;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.table-col1 {
+    border: 1px solid $color-c;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+}
+
+.table-col2, .table-col3, .table-col4, .table-col5, .table-col6 {
+    border: 1px solid $color-c;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+} 
 
 input {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid $color-c;
 }
 
 .save-btn {
-    background-color: rgb(60, 196, 60);
+    background-color:$color-save-btn;
     border-radius: 5px;
-    color: #fff;
+    color: $color-w;
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin-right: 0.5rem;
-    border: 1px solid gray;
+    border: 1px solid $color-g;
 }
 
 .save-btn:hover {
@@ -38,13 +58,13 @@ input {
 }
 
 .cancel-btn {
-    background-color: rgb(92, 92, 218);
+    background-color: $color-cancel-btn;
         border-radius: 5px;
-        color: #fff;
+        color: $color-w;
         cursor: pointer;
         padding: 0.5rem 1rem;
         margin-right: 0.5rem;
-        border: 1px solid gray;
+        border: 1px solid $color-g;
 }
 
 .cancel-btn:hover {
@@ -52,13 +72,13 @@ input {
 }
 
 .edit-btn {
-    background-color: rgb(235, 175, 65);
+    background-color: $color-edit-btn;
     border-radius: 5px;
-    color: #fff;
+    color: $color-w;
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin-right: 0.5rem;
-    border: 1px solid gray;
+    border: 1px solid $color-g;
 }
 
 .edit-btn:hover {
@@ -66,13 +86,13 @@ input {
 }
 
 .delete-btn {
-    background-color: rgb(233, 71, 71);
+    background-color: $color-delete-btn;
     border-radius: 5px;
-    color: #fff;
+    color: $color-w;
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin-right: 0.5rem;
-    border: 1px solid gray;
+    border: 1px solid $color-g;
 }
 
 .delete-btn:hover {
@@ -80,12 +100,12 @@ input {
 }
 
 .add-btn {
-    background-color: rgb(53, 54, 119);
+    background-color: $color-basic-btn;
     border-radius: 5px;
-    color: #fff;
+    color: $color-w;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    border: 1px solid gray;
+    border: 1px solid $color-g;
     font-weight: bold;
     margin: 10px;
 }

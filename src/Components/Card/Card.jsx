@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Card.scss";
 
-const WordCard = ({ word, transcription, translation, topic }) => {
+const WordCard = ({ word, transcription, translation, tags }) => {
   const [showTranslation, setShowTranslation] = useState(false);
 
   const handleShowTranslation = () => {
@@ -12,7 +12,7 @@ const WordCard = ({ word, transcription, translation, topic }) => {
     <div className="word-card">
       <div className="card-header">
         <p className="word">{word}</p>
-        <p className="topic">{topic}</p>
+        <p className="tags">{tags}</p>
       </div>
       <div className="card-body">
         <p className="transcription">{transcription}</p>

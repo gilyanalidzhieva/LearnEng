@@ -9,7 +9,7 @@ const words = [
     word: "Laptop",
     transcription: "[læptɑːp]",
     translation: "Ноутбук",
-    topic: "Технологии",
+    tags: "Технологии",
   },
 ];
 

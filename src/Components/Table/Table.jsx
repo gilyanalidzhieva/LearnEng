@@ -1,9 +1,12 @@
 import './Table.scss';
 import { useState } from 'react';
 
-function WordList() {
-  const [words, setWords] = useState([
-  ]);
+function WordList({ initialWords = [] }) {
+  const [words, setWords] = useState(initialWords.map(word => ({
+    ...word,
+    isEditing: false, 
+    initial: { ...word } 
+  })));
 
   const handleAddWord = () => {
     setWords([...words, {
@@ -13,6 +16,12 @@ function WordList() {
       russian: '',
       tags: '',
       isEditing: false, 
+      initial: {
+        english: '',
+        transcription: '',
+        russian: '',
+        tags: '',
+      }
     }]);
   };
 
@@ -31,7 +40,7 @@ function WordList() {
 
   const handleCancel = (id) => {
     const updatedWords = words.map(word =>
-      word.id === id ? { ...word, isEditing: false } : word 
+      word.id === id ? { ...word, ...word.initial, isEditing: false } : word 
     );
     setWords(updatedWords);
   };
@@ -50,15 +59,15 @@ function WordList() {
 
   return (
     <div className='word-list'>
-      <table>
+      <table className='word-table'>
         <thead>
           <tr>
-            <th>№</th>
-            <th>English</th>
-            <th>Transcription</th>
-            <th>Russian</th>
-            <th>Tags</th>
-            <th>Actions</th>
+            <th className='table-col1'>№</th>
+            <th className='table-col2'>English</th>
+            <th className='table-col3'>Transcription</th>
+            <th className='table-col4'>Russian</th>
+            <th className='table-col5'>Tags</th>
+            <th className='table-col6'>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -66,12 +75,12 @@ function WordList() {
             <tr key={word.id}>
               {word.isEditing ? (
                 <>
-                  <td>{index + 1}</td>
-                  <td><input type="text" value={word.english} onChange={(e) => handleInputChange(word.id, 'english', e.target.value)} /></td>
-                  <td><input type="text" value={word.transcription} onChange={(e) => handleInputChange(word.id, 'transcription', e.target.value)} /></td>
-                  <td><input type="text" value={word.russian} onChange={(e) => handleInputChange(word.id, 'russian', e.target.value)} /></td>
-                  <td><input type="text" value={word.tags} onChange={(e) => handleInputChange(word.id, 'tags', e.target.value)} /></td>
-                  <td>
+                  <td className='table-cell'>{index + 1}</td>
+                  <td className='table-cell1'><input type="text" value={word.english} onChange={(e) => handleInputChange(word.id, 'english', e.target.value)} /></td>
+                  <td className='table-cell1'><input type="text" value={word.transcription} onChange={(e) => handleInputChange(word.id, 'transcription', e.target.value)} /></td>
+                <td className='table-cell1'><input type="text" value={word.russian} onChange={(e) => handleInputChange(word.id, 'russian', e.target.value)} /></td>
+                  <td className='table-cell1'><input type="text" value={word.tags} onChange={(e) => handleInputChange(word.id, 'tags', e.target.value)} /></td>
+                  <td className='table-cell'>
                     <button className='save-btn' onClick={() => handleSave(word.id, {
                       english: word.english,
                       transcription: word.transcription,
@@ -83,12 +92,12 @@ function WordList() {
                 </>
               ) : (
                 <>
-                  <td>{index + 1}</td>
-                  <td>{word.english}</td>
-                  <td>{word.transcription}</td>
-                  <td>{word.russian}</td>
-                  <td>{word.tags}</td>
-                  <td>
+                  <td className='table-cell'>{index + 1}</td>
+                  <td className='table-cell1'>{word.english}</td>
+                  <td className='table-cell1'>{word.transcription}</td>
+                  <td className='table-cell1'>{word.russian}</td>
+                  <td className='table-cell1'>{word.tags}</td>
+                  <td className='table-cell'>
                     <button className='edit-btn' onClick={() => handleEdit(word.id)}>Редактировать</button>
                     <button className='delete-btn' onClick={() => handleDelete(word.id)}>Удалить</button>
                   </td>
